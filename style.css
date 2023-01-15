@@ -11,7 +11,7 @@ body {
   padding: 0 10px;
   justify-content: center;
   min-height: 100vh;
-  background: #9b59b6;
+  background: #bb4174;
 }
 
 .wrapper {
@@ -109,7 +109,7 @@ header .current-date {
 }
 
 .days li.active::before {
-  background: #9b59b6;
+  background: #bb4174;
 }
 
 .days li:not(.active):hover::before {

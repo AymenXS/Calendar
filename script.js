@@ -24,7 +24,7 @@ const months = [
 ];
 
 const renderCalendar = () => {
-  let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // Getting first date of current month
+  let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // Getting first day of current month
     lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(); // Getting last date of current month
   lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(); // Getting last day of current month
   lastDateofPrevMonth = new Date(currYear, currMonth, 0).getDate(); // Getting last date of previous month
@@ -64,6 +64,7 @@ prevNextIcon.forEach((icon) => {
       date = new Date(currYear, currMonth); // Creating a new date of current year & month and pass it as date value
       currYear = date.getFullYear(); // Updating current year with new date year
       currMonth = date.getMonth(); // Updating current month with new date month
+
     } else {
       // Else pass new Date as date value
       date = new Date();
